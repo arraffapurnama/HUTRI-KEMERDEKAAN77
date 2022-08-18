@@ -530,9 +530,6 @@ form textarea {
   .footer h2 {
     font-size: 1.5rem;
   }
-  .copyright p {
-    font-size: 18px;
-  }
   .presidenRI-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
@@ -562,7 +559,7 @@ form textarea {
     font-size: 1rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   .home {
     margin-top: -2rem;
   }
@@ -588,7 +585,7 @@ form textarea {
     font-size: 15px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 375px) {
   .contact-form form {
     width: auto;
   }
