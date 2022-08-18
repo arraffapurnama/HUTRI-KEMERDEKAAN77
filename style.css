@@ -521,6 +521,12 @@ form textarea {
   }
 }
 @media (max-width: 500px) {
+  .home-title {
+    font-size: 1.7rem;
+  }
+  .proklamasi-img img {
+    width: 80%;
+  }
   .footer h2 {
     font-size: 1.5rem;
   }
@@ -532,16 +538,6 @@ form textarea {
     grid-template-columns: repeat(auto-fit, minmax(150px, auto));
     margin-top: 2rem;
   }
-}
-@media (max-width: 500px) {
-  .home-title {
-    font-size: 1.7rem;
-  }
-  .proklamasi-img img {
-    width: 80%;
-  }
-}
-@media (max-width: 500px) {
   .footer h2 {
     font-size: 1.3rem;
   }
