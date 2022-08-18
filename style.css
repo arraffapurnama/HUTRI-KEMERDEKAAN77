@@ -1,0 +1,652 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 11rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 3.5rem 0 0 0;
+  overflow-x: hidden;
+}
+.main {
+  padding: 1rem 1rem 0;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff0000;
+  box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
+  padding: 0 1rem;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  justify-content: space-between;
+}
+
+.header-logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.header-toggle {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+/* END OF HEADER */
+
+/* NAV */
+.nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  padding: 1rem 1.5rem 0;
+  background-color: #fff;
+  box-shadow: 1px 0 0 rgba(22, 8, 43, 0.1);
+  z-index: 100;
+  transition: 0.5s ease;
+}
+
+.nav-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+  overflow: auto;
+  scrollbar-width: none;
+}
+
+.nav-container::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-logo {
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: #ff0000;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list,
+.nav-items {
+  display: grid;
+}
+
+.nav-list {
+  row-gap: 2.5rem;
+}
+
+.nav-items {
+  row-gap: 1.5rem;
+}
+
+.nav-subtitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #58555e;
+  margin: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #58555e;
+}
+
+.nav-link:hover {
+  color: #ff0000;
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+.nav-name {
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nav-logout {
+  margin-top: 5rem;
+}
+/* END OF NAV */
+
+/* HOME */
+.home {
+  min-height: 100vh;
+  display: grid;
+}
+
+.home-container {
+  display: grid;
+  align-content: center;
+  row-gap: 2.5rem;
+}
+
+.home-data {
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2.3rem;
+  margin: 0.75rem 0;
+}
+
+.home-img img {
+  width: 240px;
+  border-radius: 10%;
+  transform: scale(1.5);
+}
+
+.home-img {
+  justify-self: center;
+}
+.home-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+/* END OF HOME */
+
+/* SEJARAH */
+.heading {
+  text-align: center;
+}
+.heading h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.heading span {
+  font-size: 1.1rem;
+}
+.sejarah-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.sejarah-img img {
+  margin-left: 4rem;
+  width: 80%;
+  border-radius: 1rem;
+}
+.sejarah-text p {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+/* END OF SEJARAH */
+
+/* TEKS-PROKLAMASI */
+.teks-proklamasi {
+  margin-top: 13rem;
+}
+.proklamasi-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.proklamasi-img img {
+  margin-left: 4rem;
+  width: 30%;
+  border-radius: 1rem;
+}
+.proklamasi-img {
+  display: flex;
+  justify-content: center;
+  margin-left: -4rem;
+}
+.proklamasi-text p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 5rem;
+}
+/* END OF TEKS-PROKLAMASI */
+
+/* PRESIDEN RI */
+.presidenRI {
+  margin-top: 11rem;
+}
+.presidenRI-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.presidenRI-img {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 1s ease;
+}
+.presidenRI-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  filter: brightness(105%);
+}
+.presidenRI-img:hover {
+  transform: translateY(-15px);
+}
+/* END OF PRESIDEN RI */
+
+/* CONTACT */
+.contact {
+  margin: 10rem 0 10rem 0;
+}
+.contact-form {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+form input,
+button,
+textarea {
+  padding: 15px;
+  border-radius: 30px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #ff0000;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0px 4px 4px 0px #101d422a, 0px 1px 4px 0px #101d422a;
+}
+
+form input::placeholder,
+textarea::placeholder {
+  color: #fff;
+}
+form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact-button {
+  width: 90px;
+  padding: 10px;
+  cursor: pointer;
+  background: #ff0000;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.contact-button:hover {
+  opacity: 0.8;
+}
+/* END OF CONTACT*/
+
+/* FOOTER */
+.footer {
+  display: grid;
+  place-items: center;
+  padding: 50px;
+  background: #ff0000;
+  color: #fff;
+}
+.footer h2 {
+  font-size: 2rem;
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+}
+.footer-social a {
+  color: #fff;
+  font-size: 26px;
+  padding: 10px;
+}
+.copyright {
+  padding: 20px;
+  background: #ec0000;
+}
+.copyright p {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+}
+.copyright i {
+  color: #fff;
+}
+/* END OF FOOTER */
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, #ff0000, #fff);
+  animation: animate 5s linear infinite;
+  border-radius: 10px;
+}
+
+#progressbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #ff0000, #fff);
+  filter: blur(10px);
+  border-radius: 10px;
+}
+
+#progressbar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(to top, #ff0000, #fff);
+  filter: blur(30px);
+  border-radius: 10px;
+}
+/* END OF SCROLLBAR */
+
+/* SHOW MENU */
+.show-menu {
+  left: 0;
+}
+/* END OF SHOW MENU */
+
+/* BTN */
+.btn {
+  margin-top: 2rem;
+  display: inline-block;
+  background: #ff0000;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.9rem 1.2rem;
+  border-radius: 30px;
+  transition: 0.5s ease;
+}
+.btn:hover {
+  background: #ec0000;
+}
+/* END OF BTN */
+
+/* ACTIVE */
+.active {
+  color: #ff0000;
+}
+/* END OF ACTIVE */
+
+/* RESPONSIVE */
+@media screen and (min-width: 1024px) {
+  .home-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 2rem;
+  }
+  .home-data {
+    text-align: initial;
+  }
+  .home-img img {
+    width: 450px;
+    margin: -5rem -4rem 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 1rem 3rem 0 6rem;
+  }
+  .header {
+    padding: 0 3rem 0 6rem;
+  }
+  .header-container {
+    height: calc(3.5rem + 0.5rem);
+  }
+  .header-toggle {
+    display: none;
+  }
+  .header-logo {
+    display: block;
+  }
+  .header-img {
+    width: 40px;
+    height: 40px;
+    order: 1;
+  }
+  .nav {
+    left: 0;
+    padding: 1.2rem 1.5rem 0;
+    width: 73px;
+  }
+  .nav-items {
+    row-gap: 1.7rem;
+  }
+  .nav-icon {
+    font-size: 1.4rem;
+  }
+
+  .nav-logo-name,
+  .nav-name,
+  .nav-subtitle {
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .nav:hover {
+    width: 210px;
+  }
+
+  .nav:hover .nav-logo-name {
+    opacity: 1;
+  }
+  .nav:hover .nav-subtitle {
+    opacity: 1;
+  }
+  .nav:hover .nav-name {
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .header-logo {
+    font-size: 1.3rem;
+  }
+  .sejarah-container {
+    grid-template-columns: 1fr;
+  }
+  .sejarah-img {
+    display: flex;
+    justify-content: center;
+    margin-left: -4rem;
+  }
+  .proklamasi-img img {
+    width: 60%;
+  }
+  .proklamasi-img {
+    display: flex;
+    justify-content: center;
+  }
+  .proklamasi-text p {
+    text-align: justify;
+    padding: 0;
+  }
+  .footer-social a {
+    --fa-animation-duration: none;
+  }
+  .presidenRI-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    margin-top: 2rem;
+  }
+  .presidenRI-img:hover {
+    transform: none;
+  }
+}
+@media (max-width: 500px) {
+  .footer h2 {
+    font-size: 1.5rem;
+  }
+  .copyright p {
+    font-size: 18px;
+  }
+  .presidenRI-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .home-title {
+    font-size: 1.7rem;
+  }
+  .proklamasi-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .footer h2 {
+    font-size: 1.3rem;
+  }
+  .footer {
+    padding: 40px;
+  }
+  .copyright p {
+    font-size: 16px;
+  }
+  .heading h2 {
+    font-size: 1.6rem;
+  }
+  .heading span {
+    font-size: 1rem;
+  }
+  .sejarah-text p {
+    font-size: 1rem;
+  }
+  .proklamasi-text p {
+    font-size: 1rem;
+  }
+  form input,
+  button,
+  textarea {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 375px) {
+  .home {
+    margin-top: -2rem;
+  }
+  .home-img img {
+    margin-top: 0;
+    width: 180px;
+  }
+  .home-title {
+    font-size: 1.2rem;
+  }
+  .home-subtitle {
+    font-size: 1rem;
+  }
+  .home-description {
+    font-size: 0.9rem;
+  }
+  .presidenRI-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 340px) {
+  .contact-form form {
+    width: auto;
+  }
+  .contact-button {
+    width: 90px;
+    font-size: 16px;
+  }
+  .copyright {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .footer h2 {
+    font-size: 1.1rem;
+  }
+  form input,
+  button,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  .copyright {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 300px) {
+  .contact-button {
+    width: 85px;
+    font-size: 15px;
+  }
+  .social a {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 20px;
+  }
+  .footer h2 {
+    font-size: 1.1rem;
+  }
+  .footer-social a {
+    color: #fff;
+    font-size: 22px;
+    padding: 10px;
+  }
+  .copyright {
+    padding: 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 270px) {
+  body {
+    display: none;
+  }
+}
+/* END OF RESPONSIVE */
+/* © Created By Ar'raffa */
