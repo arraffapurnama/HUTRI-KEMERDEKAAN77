@@ -486,6 +486,9 @@ form textarea {
   }
 }
 @media (max-width: 768px) {
+  .header-toggle {
+    display: initial;
+  }
   .header-logo {
     font-size: 1.3rem;
   }
@@ -508,7 +511,8 @@ form textarea {
     text-align: justify;
     padding: 0;
   }
-  .footer-social a {
+  .footer-social a,
+  .copyright i {
     --fa-animation-duration: none;
   }
   .presidenRI-content {
@@ -539,7 +543,7 @@ form textarea {
     padding: 40px;
   }
   .copyright p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .heading h2 {
     font-size: 1.6rem;
@@ -582,7 +586,7 @@ form textarea {
     margin-top: 2rem;
   }
   .copyright p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (max-width: 375px) {
@@ -594,7 +598,7 @@ form textarea {
     font-size: 16px;
   }
   .copyright {
-    font-size: 13px;
+    font-size: 12px;
   }
   .footer h2 {
     font-size: 1.3rem;
