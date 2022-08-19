@@ -523,6 +523,9 @@ form textarea {
   .presidenRI-img:hover {
     transform: none;
   }
+  .copyright p {
+    font-size: 16px;
+  }
 }
 @media (max-width: 700px) {
   .home-title {
@@ -630,7 +633,6 @@ form textarea {
   }
   .copyright {
     padding: 20px;
-    font-size: 12px;
   }
 }
 @media (max-width: 270px) {
