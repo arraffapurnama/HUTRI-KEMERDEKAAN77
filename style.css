@@ -431,6 +431,7 @@ form textarea {
     margin: -5rem -4rem 0 0;
   }
 }
+
 @media screen and (min-width: 768px) {
   .main {
     padding: 1rem 3rem 0 6rem;
@@ -485,6 +486,7 @@ form textarea {
     opacity: 1;
   }
 }
+
 @media (max-width: 768px) {
   .header-toggle {
     display: initial;
@@ -524,12 +526,24 @@ form textarea {
     transform: none;
   }
   .copyright p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 @media (max-width: 700px) {
   .home-title {
     font-size: 1.7rem;
+  }
+  .heading h2 {
+    font-size: 1.6rem;
+  }
+  .heading span {
+    font-size: 1rem;
+  }
+  .sejarah-text p {
+    font-size: 1rem;
+  }
+  .proklamasi-text p {
+    font-size: 1rem;
   }
   .proklamasi-img img {
     width: 80%;
@@ -547,18 +561,6 @@ form textarea {
   }
   .copyright p {
     font-size: 14px;
-  }
-  .heading h2 {
-    font-size: 1.6rem;
-  }
-  .heading span {
-    font-size: 1rem;
-  }
-  .sejarah-text p {
-    font-size: 1rem;
-  }
-  .proklamasi-text p {
-    font-size: 1rem;
   }
   form input,
   button,

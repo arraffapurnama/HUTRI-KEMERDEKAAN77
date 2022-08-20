@@ -16,6 +16,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet" />
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- TITLE-->
     <title>Dirgahayu Republik Indonesia</title>
   </head>
@@ -105,12 +107,12 @@
 
       <!-- SEJARAH -->
       <section class="sejarah" id="sejarah">
-        <div class="heading">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="heading">
           <h2>Sejarah</h2>
           <span>Proklamasi</span>
         </div>
 
-        <div class="sejarah-container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="sejarah-container">
           <div class="sejarah-img">
             <img src="img/Proklamasi Kemerdekaan.jpg" alt="Proklamasi Kemerdekaan Indonesia " />
           </div>
@@ -130,12 +132,12 @@
 
       <!-- TEKS-PROKLAMASI -->
       <section class="teks-proklamasi" id="proklamasi">
-        <div class="heading">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="heading">
           <h2>Teks Proklamasi</h2>
           <span>Kemerdekaan Indonesia</span>
         </div>
 
-        <div class="proklamasi-container">
+        <div data-aos="fade-up" data-aos-duration="1000" class="proklamasi-container">
           <div class="proklamasi-img">
             <img src="img/Teks Proklamasi.jpg" alt="Proklamasi Kemerdekaan Indonesia " />
           </div>
@@ -151,7 +153,7 @@
 
       <!-- PRESIDEN RI -->
       <section class="presidenRI" id="presidenri">
-        <div class="heading">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="heading">
           <h2>Presiden RI</h2>
           <span>Dari masa ke masa</span>
         </div>
@@ -184,7 +186,7 @@
 
       <!-- CONTACT -->
       <section class="contact" id="contact">
-        <div class="heading">
+        <div data-aos="zoom-in" data-aos-duration="1000" class="heading">
           <h2>Contact</h2>
           <span>Saran Dan Kritik</span>
         </div>
@@ -221,7 +223,19 @@
 
     <!-- JS -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/TextPlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.28/dist/sweetalert2.all.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // ANIMATION
+      gsap.registerPlugin(TextPlugin);
+      gsap.from(".header-container, .nav-logo, .nav-list", { duration: 2, y: "-100", ease: "back" });
+      gsap.from(".home-container", { duration: 3, x: "-100", ease: "back", opacity: 0 });
+    </script>
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbw1dTBe1nOL6c6zfUt0UOEXxvi8hfOExO-wguYUCU21tT_r8bDonxs9-8Kh7sMZ89yJ/exec";
       const form = document.forms["hut-ri-contact-form"];
