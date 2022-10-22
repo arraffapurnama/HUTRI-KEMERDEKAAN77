@@ -245,6 +245,7 @@ body {
   height: 100%;
   display: block;
   filter: brightness(105%);
+  object-fit: cover;
 }
 .presidenRI-img:hover {
   transform: translateY(-15px);
